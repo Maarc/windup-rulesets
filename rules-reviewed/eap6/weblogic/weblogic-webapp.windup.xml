@@ -15,7 +15,6 @@
         </dependencies>
         <sourceTechnology id="weblogic" />
         <targetTechnology id="eap" versionRange="[6,7)" />
-        <tag>reviewed-2015-06-05</tag>
         <tag>web-app</tag>
     </metadata>
 
@@ -50,12 +49,16 @@
                       See the [javax.servlet.annotation JavaDoc](http://docs.oracle.com/javaee/6/api/javax/servlet/annotation/package-summary.html) for more information.
                       ]]>
                     </message>
-                    <link href="https://access.redhat.com/articles/1249423" title="Migrate WebLogic Proprietary Servlet Annotations" />
+                    <link href="https://access.redhat.com/articles/1249423" title="WebLogic proprietary servlet annotations" />
                     <tag>servlet</tag>
                     <tag>weblogic</tag>
                     <quickfix name="WebServlet" type="REPLACE">
                         <replacement>WebServlet</replacement>
                         <search>WLServlet</search>
+                    </quickfix>
+                    <quickfix name="Mapping Attribute" type="REPLACE">
+                        <replacement>urlPatterns</replacement>
+                        <search>mapping</search>
                     </quickfix>
                 </hint>
             </perform>
@@ -75,7 +78,7 @@
                       See the [javax.servlet.annotation JavaDoc](http://docs.oracle.com/javaee/6/api/javax/servlet/annotation/package-summary.html) for more information.
                       ]]>
                     </message>
-                    <link href="https://access.redhat.com/articles/1249423" title="Migrate WebLogic Proprietary Servlet Annotations" />
+                    <link href="https://access.redhat.com/articles/1249423" title="WebLogic proprietary servlet annotations" />
                     <tag>servlet</tag>
                     <tag>weblogic</tag>
                     <quickfix name="WebInitParam" type="REPLACE">
@@ -100,7 +103,7 @@
                       See the [javax.servlet.annotation JavaDoc](http://docs.oracle.com/javaee/6/api/javax/servlet/annotation/package-summary.html) for more information.
                       ]]>
                     </message>
-                    <link href="https://access.redhat.com/articles/1249423" title="Migrate WebLogic Proprietary Servlet Annotations" />
+                    <link href="https://access.redhat.com/articles/1249423" title="WebLogic proprietary servlet annotations" />
                     <tag>servlet</tag>
                     <tag>weblogic</tag>
                     <quickfix name="WebFilter" type="REPLACE">
